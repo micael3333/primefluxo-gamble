@@ -135,19 +135,18 @@
 </main>
 
 <footer class="wrap">
-  <div><strong>PrimeFluxo</strong> — recurso informativo independiente. 18+ · Publicidad de apuestas permitida para usuarios dentro de jurisdicciones donde el juego es legal. Juega con moderación.</div>
-  <div style="margin-top:6px">Este sitio no garantiza resultados ni se responsabiliza por decisiones de terceros. Si el juego deja de ser entretenimiento, busca ayuda especializada.</div>
-</footer>
+  <div><strong>PrimeFluxo</strong> — recurso informativo independente sobre operadores com licença em México (SEGOB). 18+.</div>
 
-<script>
-  const btn=document.querySelector('.toggle');
-  const nav=document.getElementById('nav');
-  const mobileCTAs=nav.querySelectorAll('[data-mobile-cta]');
-  const sync=()=>{const m=window.matchMedia('(max-width:860px)').matches;
-    mobileCTAs.forEach(a=>a.style.display=m?'block':'none');};
-  sync(); window.addEventListener('resize',sync);
-  btn.addEventListener('click',()=>{const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});
-  nav.addEventListener('click',e=>{if(e.target.tagName==='A'&&nav.classList.contains('open')){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-</script>
-</body>
-</html>
+  <div style="margin-top:6px">
+    <strong>Entidad legal:</strong> M. Vasquez de Barros (CPF 053.225.641-79)<br>
+    <strong>Contacto:</strong> <a href="mailto:michaelvasquez344@gmail.com">michaelvasquez344@gmail.com</a> · 
+    <a href="https://wa.me/5566996570102">+55 (66) 99657-0102</a><br>
+    Dirección comercial: Rua das Papoulas 187 – Jardim Cuiabá · Cuiabá-MT (BR)
+  </div>
+
+  <div style="margin-top:10px">
+    Este sitio actúa únicamente como afiliado y no ofrece servicios de juego.  
+    Los enlaces pueden generar comisiones sin costo adicional para el usuario.  
+    Juega responsablemente — si el juego deja de ser entretenimiento, busca ayuda especializada.
+  </div>
+</footer>
