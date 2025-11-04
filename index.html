@@ -3,26 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PrimeFluxo – Guía de apuestas reguladas (México & Perú)</title>
-<meta name="description" content="PrimeFluxo es un sitio informativo e independiente sobre apuestas reguladas. Revisamos bonos de bienvenida, métodos de pago y normas de juego responsable en México y Perú.">
+<title>PrimeFluxo – Guía y comparativas de apuestas reguladas (MX & PE)</title>
+<meta name="description" content="PrimeFluxo es un sitio informativo e independiente sobre apuestas reguladas en México y Perú. Bonos, métodos de pago, requisitos, torneos y juego responsable.">
 <link rel="stylesheet" href="/assets/styles.css">
 <link rel="icon" href="/assets/favicon.ico">
 <!-- Schema.org -->
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"Organization",
- "name":"PrimeFluxo",
- "url":"https://primefluxo.online/",
- "logo":"https://primefluxo.online/assets/logo.png",
- "sameAs":[]
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"PrimeFluxo",
+  "url":"https://primefluxo.online/",
+  "logo":"https://primefluxo.online/assets/logo.png",
+  "contactPoint":[{
+    "@type":"ContactPoint",
+    "contactType":"customer support",
+    "email":"michaelvasquez344@gmail.com",
+    "telephone":"+55-66-99657-0102",
+    "areaServed":["MX","PE"]
+  }]
 }
 </script>
+<style>
+/* ajustes mínimos caso /assets/styles.css esteja simples; remova se já tiver um CSS caprichado */
+:root{--bg:#0b0d12;--panel:#121620;--text:#ecf0f1;--muted:#9aa3af;--brand:#46c2ad;--brand2:#5b8def}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+a{color:var(--brand);text-decoration:none}
+a:hover{opacity:.9}
+.nav{display:flex;gap:1rem;align-items:center;justify-content:center;padding:14px 20px;background:#0f1320;position:sticky;top:0;z-index:10}
+.nav a{color:#cbd5e1;font-weight:600}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+.hero .panel{background:var(--panel);border:1px solid #1e2435;border-radius:14px;padding:22px}
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
+.kpi{background:#0e1322;border:1px solid #1b2336;border-radius:12px;padding:14px;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid #1e2435;border-radius:14px;padding:18px}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--brand),var(--brand2));color:#04121a;font-weight:800;border-radius:10px;padding:12px 16px;margin-top:8px}
+.section{margin-top:34px}
+.badge{background:#0f1627;border-left:4px solid var(--brand2);padding:12px 14px;border-radius:8px}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.footer{padding:28px;text-align:center;color:var(--muted)}
+.small{color:var(--muted);font-size:.92rem}
+.disclaimer{color:#ffdd99}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body>
 <header>
   <nav class="nav">
-    <a href="/index.html">Inicio</a>
+    <a href="/index.html" aria-current="page">Inicio</a>
     <a href="/mexico.html">México</a>
     <a href="/peru.html">Perú</a>
     <a href="/responsible-gambling.html">Juego Responsable</a>
@@ -32,66 +67,120 @@
 </header>
 
 <main class="container">
+  <!-- HERO -->
   <section class="hero">
-    <h1>PrimeFluxo — Información y comparativas de apuestas reguladas</h1>
-    <p>
-      Somos un sitio <strong>informativo e independiente</strong> sobre apuestas en mercados regulados.
-      Aquí encontrarás <strong>bonos de bienvenida</strong>, métodos de pago, condiciones clave y avisos de
-      <a href="/responsible-gambling.html">juego responsable</a>. PrimeFluxo <strong>no es operador</strong> y no procesa apuestas:
-      enlazamos a operadores autorizados en cada país.
-    </p>
-    <p class="disclaimer">
-      18+. Juega con responsabilidad. La disponibilidad de promociones depende de tu ubicación y verificación KYC del operador.
-    </p>
-  </section>
-
-  <section id="paises">
-    <h2>Países que cubrimos</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>México</h3>
-        <p>Mercado regulado por la <strong>SEGOB</strong>. Consulta bonos y métodos de pago locales.</p>
-        <a class="btn" href="/mexico.html">Ver guías de México</a>
-      </article>
-      <article class="card">
-        <h3>Perú</h3>
-        <p>Operadores autorizados por <strong>MINCETUR</strong>. Lee términos locales y verificación.</p>
-        <a class="btn" href="/peru.html">Ver guías de Perú</a>
-      </article>
+    <div class="panel">
+      <h1 style="margin-top:0">PrimeFluxo — Información independiente de apuestas reguladas</h1>
+      <p>
+        Somos un sitio <strong>informativo y afiliado</strong> que compara ofertas, explica <em>rollovers</em>,
+        métodos de pago y <a href="/responsible-gambling.html">juego responsable</a> en mercados regulados de
+        <strong>México</strong> y <strong>Perú</strong>. No somos operador; no procesamos apuestas.
+      </p>
+      <div class="kpis">
+        <div class="kpi"><strong>Regulación</strong><br><span class="small">SEGOB (MX) · MINCETUR (PE)</span></div>
+        <div class="kpi"><strong>Guías País</strong><br><span class="small"><a href="/mexico.html">México</a> · <a href="/peru.html">Perú</a></span></div>
+        <div class="kpi"><strong>Transparencia</strong><br><span class="small">Enlaces con <code>rel="sponsored nofollow"</code></span></div>
+      </div>
+      <p class="disclaimer" style="margin-top:10px">18+. Juega con responsabilidad. Sujeto a KYC.</p>
+    </div>
+    <div class="panel">
+      <h2 style="margin-top:0">Accesos rápidos</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>México · Betway</h3>
+          <p class="small">Bonos de bienvenida en deportes y casino, métodos locales, verificación KYC y tiempos de retiro.</p>
+          <a class="btn" href="/mexico.html">Abrir guía México</a>
+        </div>
+        <div class="card">
+          <h3>Perú · 1xBet</h3>
+          <p class="small">Promos de primer depósito, contribución por juego, límites y normativas de MINCETUR.</p>
+          <a class="btn" href="/peru.html">Abrir guía Perú</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="bonos">
-    <h2>Cómo evaluar un bono de bienvenida</h2>
-    <ul>
-      <li><strong>Requisito de apuesta (rollover):</strong> veces que debes apostar el bono.</li>
-      <li><strong>Contribución por juego:</strong> slots vs. casino en vivo pueden ponderar distinto.</li>
-      <li><strong>Validez temporal:</strong> fecha límite para liberar el bono.</li>
-      <li><strong>Métodos de depósito elegibles:</strong> algunas promos excluyen ciertos métodos.</li>
-      <li><strong>Verificación KYC:</strong> es obligatoria para retirar.</li>
-    </ul>
+  <!-- BLOQUE INFO LARGO (SEO > 500 palabras entre home y secciones) -->
+  <section id="como-evaluar" class="section">
+    <h2>Cómo evaluar un bono y evitar errores comunes</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Requisitos de apuesta</h3>
+        <p class="small">
+          Verifica el <strong>multiplicador</strong> (p. ej., 5x–30x), las <strong>cuotas mínimas</strong> en deportes, la
+          <strong>contribución por juego</strong> en casino (slots suelen contar 100%, casino en vivo menos) y el
+          <strong>plazo de validez</strong> del bono. Si el tiempo es corto, planifica tu estrategia o considera no optar por el bono.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Métodos de pago</h3>
+        <p class="small">
+          Algunas promos excluyen ciertos medios (p. ej., wallets). Revisa límites, comisiones y
+          <strong>tiempos de retiro</strong>. En regulados, la verificación <strong>KYC</strong> es obligatoria antes de retirar.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Control y responsabilidad</h3>
+        <p class="small">
+          Usa límites de depósito/tiempo y considera la <strong>autoexclusión</strong> si lo necesitas.
+          Recursos completos en <a href="/responsible-gambling.html">Juego Responsable</a>. 18+.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <section id="pagos">
-    <h2>Métodos de pago comunes</h2>
-    <p>Tarjetas, transferencias locales, billeteras, vouchers. Verifica límites, comisiones y tiempos de retiro en cada operador.</p>
+  <!-- RESUMEN DE PAÍS (con CTAs internos, NO bridge) -->
+  <section id="resumenes" class="section">
+    <h2>Resumen de mercados que cubrimos</h2>
+
+    <div class="card">
+      <h3>México — Regulación SEGOB</h3>
+      <p class="small">
+        En México, los operadores autorizados bajo la <strong>SEGOB</strong> ofrecen bonos de bienvenida en
+        deportes y casino. Revisa términos específicos (cuotas, ligas/mercados válidos, juegos elegibles,
+        rollover, validez y límites). Para una guía práctica de Bonos, Pagos y KYC en Betway México,
+        entra a la <a href="/mexico.html">Guía México</a>.
+      </p>
+      <a class="btn" href="/mexico.html">Ver detalles de México</a>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h3>Perú — Regulación MINCETUR</h3>
+      <p class="small">
+        En Perú, la actividad está supervisada por <strong>MINCETUR</strong>. Las promos de bienvenida suelen ser
+        <em>match bonus</em> al primer depósito y, en casino, giros adicionales. ¡Importante! Comprueba el aporte por juego
+        y el tiempo límite para liberar el bono. La guía de 1xBet Perú está aquí: <a href="/peru.html">Guía Perú</a>.
+      </p>
+      <a class="btn" href="/peru.html">Ver detalles de Perú</a>
+    </div>
   </section>
 
-  <section id="responsable">
-    <h2>Juego Responsable</h2>
-    <p>
-      Ofrecemos recursos y enlaces a herramientas de autocontrol, límites de depósito y autoexclusión.
-      Más detalles en <a href="/responsible-gambling.html">esta página</a>.
-    </p>
+  <!-- DISCLOSURES + CONTACTO LEGAL -->
+  <section id="legal" class="section">
+    <h2>Transparencia y datos de contacto</h2>
+    <div class="badge">
+      <p class="small">
+        <strong>Afiliación:</strong> PrimeFluxo participa en programas de afiliados y puede recibir compensación por
+        referencias a través de enlaces marcados con <code>rel="sponsored nofollow"</code>. Esto no altera tus
+        condiciones con el operador.
+      </p>
+      <p class="small">
+        <strong>Entidad legal / responsable editorial:</strong> m.vasquez de barros — CPF: 053-225-64179
+      </p>
+      <p class="small">
+        <strong>Contacto:</strong> <a href="mailto:michaelvasquez344@gmail.com">michaelvasquez344@gmail.com</a> ·
+        <a href="tel:+5566996570102">+55 (66) 99657-0102</a>
+      </p>
+      <p class="small">
+        <strong>Aviso 18+:</strong> El acceso y uso de promociones está prohibido para menores. Juega con responsabilidad.
+      </p>
+    </div>
   </section>
 </main>
 
 <footer class="footer">
-  <p>© PrimeFluxo. Sitio informativo/afiliado, no operador. 18+</p>
-  <p>
-    México: regulación por SEGOB. Perú: regulación por MINCETUR. 
-    Enlaces con <code>rel="sponsored nofollow"</code>.
-  </p>
+  <p>© PrimeFluxo — Sitio informativo/afiliado. 18+. Juega con responsabilidad.</p>
+  <p class="small">México: SEGOB (Dirección General de Juegos y Sorteos). Perú: MINCETUR.</p>
 </footer>
 </body>
 </html>
