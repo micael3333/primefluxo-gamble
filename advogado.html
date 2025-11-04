@@ -1,301 +1,190 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{Nome da Advogada}} – OAB/UF {{número}} | Advocacia Cível, Família e Trabalhista</title>
-  <meta name="description" content="Atendimento jurídico humanizado em {{cidade/UF}} e online. Cível, Família (divórcio consensual), Trabalhista. Avaliação inicial sem custo de compromisso." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Agulhó Advocacia e Consultoria Jurídica — Dra. Joselma Pereira Agulhó | OAB-MT 9734</title>
+  <meta name="description" content="Agulhó Advocacia e Consultoria Jurídica — atuação em Direito Criminal, Contencioso Administrativo, Contencioso Tributário, Cível e Ambiental (com ênfase em georreferenciamento). Atendemos em Mato Grosso e região.">
   <style>
     :root{
-      --bg:#0e1726;        /* azul marinho sóbrio */
-      --bg-soft:#121c2d;
-      --acc:#3fb497;       /* verde-azulado confiança */
-      --acc-2:#b8f1e6;
-      --text:#eaf1ff;
-      --muted:#b7c1d9;
-      --card:#0f1a2b;
-      --border:rgba(255,255,255,.08);
-      --danger:#ff6b6b;
+      --brand:#167e6b;        /* cor principal (muda aqui) */
+      --brand-2:#0f5b50;      /* cor secundária */
+      --ink:#1f2937;          /* texto */
+      --bg:#ffffff;           /* fundo */
+      --muted:#6b7280;        /* texto suave */
+      --card:#f8fafc;         /* bloco */
+      --ring: rgba(22,126,107,.15);
+      --radius:14px;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg) 0%, var(--bg-soft) 100%); color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    a{color:var(--acc);text-decoration:none}
+    html,body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.55}
+    a{color:var(--brand);text-decoration:none}
     a:hover{opacity:.9}
-    .wrap{max-width:1080px;margin:0 auto;padding:24px}
-    header{
-      border-bottom:1px solid var(--border);
-      padding:18px 0;
+    .wrap{max-width:1080px;margin:auto;padding:24px}
+    header{display:flex;gap:18px;align-items:center;justify-content:space-between;padding:18px 0}
+    .logo{display:flex;gap:14px;align-items:center}
+    .logo-mark{
+      width:48px;height:48px;border-radius:50%;
+      display:grid;place-items:center;color:#fff;
+      background: radial-gradient(100% 100% at 30% 20%, #1aa68d 0%, var(--brand) 60%, var(--brand-2) 100%);
+      box-shadow:0 6px 18px var(--ring)
     }
-    .brand{display:flex;gap:14px;align-items:center}
-    .monogram{
-      width:42px;height:42px;border:1px solid var(--acc);
-      display:grid;place-items:center;border-radius:8px;font-weight:700;color:var(--acc)
-    }
-    nav{margin-left:auto}
-    .row{display:flex; gap:28px; flex-wrap:wrap}
-    .hero{padding:56px 0 28px}
-    .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:6px 0 12px}
-    .subtitle{color:var(--muted); max-width:780px}
-    .badge{display:inline-flex; gap:8px; align-items:center; border:1px solid var(--border); padding:6px 10px; border-radius:999px; color:var(--muted); font-size:13px}
-    .cta{display:flex; gap:14px; margin-top:18px; flex-wrap:wrap}
+    .logo h1{margin:0;font-size:20px;line-height:1.1}
+    .sub{color:var(--muted);font-size:12px;margin-top:2px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
     .btn{
-      display:inline-flex; align-items:center; gap:10px; padding:12px 18px;
-      border-radius:10px; font-weight:600; border:1px solid transparent;
-      background:var(--acc); color:#06231c
+      appearance:none;border:0;border-radius:999px;padding:12px 18px;
+      background:var(--brand);color:#fff;font-weight:600;display:inline-flex;gap:10px;align-items:center;
+      box-shadow:0 10px 24px var(--ring);transition:.2s transform;
     }
-    .btn-outline{background:transparent; color:var(--acc); border-color:var(--acc)}
-    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:18px}
-    .col-4{grid-column:span 12}
-    @media(min-width:760px){ .col-4{grid-column:span 4} }
-    .card{
-      background:var(--card); border:1px solid var(--border); border-radius:14px;
-      padding:18px; height:100%;
-    }
-    .card h3{margin:0 0 8px;font-size:18px}
-    .muted{color:var(--muted)}
-    section{padding:30px 0}
-    .steps .step{display:flex; gap:12px; align-items:flex-start}
-    .step .num{min-width:28px;height:28px;border-radius:999px;background:var(--acc); color:#06231c; display:grid;place-items:center;font-weight:700}
-    .list{margin:8px 0 0 0; padding-left:18px}
-    .list li{margin:6px 0}
-    .kpi{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}
-    .kpi .pill{border:1px solid var(--border);border-radius:12px;padding:8px 12px;color:var(--muted);font-size:13px}
-    .notice{
-      border:1px solid var(--border); background:rgba(255,255,255,.02); padding:12px 14px; border-radius:12px; font-size:13px; color:var(--muted)
-    }
-    footer{
-      border-top:1px solid var(--border);
-      padding:24px 0 48px; margin-top:24px; color:var(--muted); font-size:13px
-    }
-    .cols{display:grid;grid-template-columns:1fr;gap:18px}
-    @media(min-width:820px){ .cols{grid-template-columns:2fr 1fr} }
-    .divider{height:1px;background:var(--border);margin:18px 0}
-    .chip{display:inline-block; font-size:12px; padding:4px 8px; border:1px solid var(--border); border-radius:999px; color:var(--muted)}
-    .anchor-menu{display:flex; gap:14px; flex-wrap:wrap; margin:10px 0}
-    .anchor-menu a{border:1px solid var(--border); padding:8px 10px; border-radius:999px; color:var(--muted)}
-    .legal{white-space:pre-wrap}
+    .btn.secondary{background:#e8f6f3;color:var(--brand)}
+    .btn:hover{transform:translateY(-1px)}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:26px 0}
+    .hero h2{font-size:36px;line-height:1.2;margin:0 0 10px}
+    .hero p{margin:0 0 18px}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px 18px}
+    .grid{display:grid;gap:16px}
+    @media (min-width:820px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    h3{margin:0 0 10px;font-size:20px}
+    ul{margin:10px 0 0 16px}
+    .badge{display:inline-block;background:#e8f6f3;color:var(--brand);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
+    .section{padding:32px 0}
+    .pill{display:inline-block;border:1px solid #e5e7eb;border-radius:999px;padding:6px 12px;font-size:12px;color:var(--muted)}
+    footer{margin-top:26px;padding:22px 0;border-top:1px solid #e5e7eb;color:var(--muted);font-size:13px}
+    .list-clean{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#eef2f7;border-radius:6px;padding:2px 6px}
   </style>
-
-  <!-- SEO/Schema (ajuste os placeholders) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LegalService",
-    "name":"{{Nome da Advogada}}",
-    "areaServed":"{{Cidade/UF}}",
-    "address":{"@type":"PostalAddress","addressLocality":"{{Cidade}}","addressRegion":"{{UF}}","addressCountry":"BR"},
-    "url":"{{https://seu-dominio.com/advogado}}",
-    "email":"{{email@profissional.com}}",
-    "telephone":"+55{{DDD}}{{numero}}",
-    "founder":"{{Nome da Advogada}}",
-    "priceRange":"Sob orçamento"
-  }
-  </script>
 </head>
 <body>
   <div class="wrap">
-
-    <!-- Header -->
-    <header class="row">
-      <div class="brand">
-        <div class="monogram">ADV</div>
+    <!-- CABEÇALHO -->
+    <header>
+      <div class="logo">
+        <div class="logo-mark">A</div>
         <div>
-          <strong>{{Nome da Advogada}}</strong><br/>
-          OAB/{{UF}} {{número}}
+          <h1>Agulhó Advocacia e Consultoria Jurídica</h1>
+          <div class="sub">Dra. Joselma Pereira Agulhó · OAB-MT 9734</div>
         </div>
       </div>
-      <nav class="anchor-menu" style="margin-left:auto">
-        <a href="#sobre">Sobre</a>
-        <a href="#areas">Áreas</a>
-        <a href="#como-funciona">Como trabalho</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contato">Contato</a>
-      </nav>
+      <div class="cta">
+        <a class="btn" href="https://wa.me/556596590441?text=Olá%2C%20gostaria%20de%20um%20atendimento."><span>WhatsApp</span></a>
+        <a class="btn secondary" href="mailto:agulhodvogados@gmail.com">agulhodvogados@gmail.com</a>
+      </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-      <span class="badge">Atendimento em {{Cidade/UF}} • Online para todo o Brasil</span>
-      <h1>Advocacia sob medida em <span style="color:var(--acc)">Cível</span>, <span style="color:var(--acc)">Família</span> e <span style="color:var(--acc)">Trabalhista</span></h1>
-      <p class="subtitle">Atuação estratégica, linguagem clara e foco em soluções. Avaliação inicial sem custo de compromisso.</p>
-      <div class="cta">
-        <a class="btn" href="https://wa.me/55{{DDD}}{{NUMERO}}?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20uma%20avaliação.">Falar no WhatsApp</a>
-        <a class="btn btn-outline" href="mailto:{{email@profissional.com}}?subject=Contato%20via%20site">Enviar e-mail</a>
+    <!-- HERO -->
+    <section class="hero card">
+      <div>
+        <span class="badge">Atuação estratégica</span>
+        <h2>Defesa técnica e consultoria jurídica com foco em resultado</h2>
+        <p>Escritório com atuação nas áreas <strong>Criminal</strong>, <strong>Contencioso Administrativo</strong>, <strong>Contencioso Tributário</strong>, <strong>Cível</strong> e <strong>Ambiental</strong>, com ênfase em <strong>georreferenciamento</strong> e regularização fundiária.</p>
+        <div class="cta">
+          <a class="btn" href="#contato">Agendar avaliação</a>
+          <a class="btn secondary" href="#areas">Ver áreas de atuação</a>
+        </div>
       </div>
-      <div class="kpi">
-        <span class="pill">Consultas online</span>
-        <span class="pill">Contrato digital</span>
-        <span class="pill">Transparência de honorários</span>
-      </div>
-    </section>
-
-    <!-- Sobre + Aviso ético -->
-    <section id="sobre" class="cols">
       <div class="card">
-        <h3>Sobre</h3>
-        <p>Sou {{Nome da Advogada}}, OAB/{{UF}} {{número}}, com atuação em {{Cível, Família e Trabalhista}}. Auxilio pessoas e empresas na prevenção e solução de conflitos, priorizando acordos quando viáveis e defesa técnica quando necessária.</p>
-        <ul class="list">
-          <li>Atendimento humanizado e sigiloso</li>
-          <li>Relatos objetivos sobre riscos e chances</li>
-          <li>Documentos e andamentos 100% digitais</li>
+        <h3>Atendimento</h3>
+        <ul class="list-clean">
+          <li>Consultas presenciais e on-line</li>
+          <li>Atuação em Mato Grosso e região</li>
+          <li>Relatórios claros e acompanhamento do processo</li>
         </ul>
       </div>
-      <div class="card">
-        <h3>Ética & Transparência</h3>
-        <div class="notice">
-          O conteúdo deste site é meramente informativo. Não constitui orientação jurídica individualizada ou promessa de resultado. O início de qualquer serviço depende de análise do caso e formalização contratual conforme o Código de Ética da OAB.
-        </div>
-        <div class="divider"></div>
-        <div class="muted">LGPD • Seus dados são usados apenas para retorno do contato. Sem compartilhamento com terceiros.</div>
-      </div>
     </section>
 
-    <!-- Áreas de atuação -->
-    <section id="areas">
-      <h2>Áreas de atuação</h2>
-      <p class="muted">Escolha o tema para saber o que posso fazer por você.</p>
-
-      <div class="grid" style="margin-top:14px">
-        <div class="col-4">
-          <div class="card">
-            <h3>Cível (Contratos &amp; Indenizações)</h3>
-            <p class="muted">Análise e elaboração de contratos; cobranças; responsabilidade civil; defesa do patrimônio.</p>
-            <ul class="list">
-              <li>Revisão/negociação contratual</li>
-              <li>Ações de cobrança/indenizatórias</li>
-              <li>Medidas urgentes (tutelas)</li>
-            </ul>
-          </div>
+    <!-- ÁREAS -->
+    <section id="areas" class="section">
+      <h3>Áreas de atuação</h3>
+      <div class="grid cols-3">
+        <div class="card">
+          <h4>Criminal</h4>
+          <ul>
+            <li>Defesa em inquérito e ação penal</li>
+            <li>Audiências de custódia e habeas corpus</li>
+            <li>Crimes contra o patrimônio e a honra</li>
+          </ul>
         </div>
-        <div class="col-4">
-          <div class="card">
-            <h3>Família (Divórcio &amp; Acordos)</h3>
-            <p class="muted">Divórcio consensual e litigioso; guarda, visitas e alimentos; partilha de bens.</p>
-            <ul class="list">
-              <li>Divórcio consensual 100% online quando possível</li>
-              <li>Acordos de guarda e pensão</li>
-              <li>Mediação e foco no menor conflito</li>
-            </ul>
-          </div>
+        <div class="card">
+          <h4>Contencioso Administrativo</h4>
+          <ul>
+            <li>Processos disciplinares e sindicâncias</li>
+            <li>Licitações e contratos públicos</li>
+            <li>Defesas e recursos perante órgãos da Administração</li>
+          </ul>
         </div>
-        <div class="col-4">
-          <div class="card">
-            <h3>Trabalhista</h3>
-            <p class="muted">Direitos de empregados e empregadores com estratégia preventiva e contenciosa.</p>
-            <ul class="list">
-              <li>Verbas rescisórias e horas extras</li>
-              <li>Acordos e negociações</li>
-              <li>Defesas e recursos</li>
-            </ul>
-          </div>
+        <div class="card">
+          <h4>Contencioso Tributário</h4>
+          <ul>
+            <li>Autos de infração e execuções fiscais</li>
+            <li>Recuperação de créditos e parcelamentos</li>
+            <li>Planejamento e consultas formais</li>
+          </ul>
         </div>
-      </div>
-    </section>
-
-    <!-- Como funciona -->
-    <section id="como-funciona">
-      <h2>Como trabalho</h2>
-      <div class="grid" style="margin-top:10px">
-        <div class="col-4">
-          <div class="card steps">
-            <div class="step">
-              <div class="num">1</div>
-              <div>
-                <strong>Contato</strong>
-                <p class="muted">Envie uma mensagem com um resumo do caso e documentos principais.</p>
-              </div>
-            </div>
-          </div>
+        <div class="card">
+          <h4>Cível</h4>
+          <ul>
+            <li>Contratos, responsabilidade civil e cobranças</li>
+            <li>Família e sucessões (divórcio consensual/contencioso, inventário)</li>
+            <li>Direitos do consumidor</li>
+          </ul>
         </div>
-        <div class="col-4">
-          <div class="card steps">
-            <div class="step">
-              <div class="num">2</div>
-              <div>
-                <strong>Avaliação</strong>
-                <p class="muted">Análise de viabilidade e explicação de riscos, prazos e custos.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card steps">
-            <div class="step">
-              <div class="num">3</div>
-              <div>
-                <strong>Proposta</strong>
-                <p class="muted">Formalização por contrato digital e início imediato do trabalho.</p>
-              </div>
-            </div>
-          </div>
+        <div class="card" style="grid-column: span 2;">
+          <h4>Ambiental (ênfase em Georreferenciamento)</h4>
+          <p>Assessoria completa para propriedades rurais e empreendimentos:</p>
+          <ul>
+            <li><strong>Georreferenciamento</strong> de imóveis rurais (SIGEF/INCRA) e confrontações</li>
+            <li>CAR, licenças ambientais, outorga e regularização de passivos</li>
+            <li>Defesas administrativas e TACs perante órgãos ambientais</li>
+          </ul>
+          <p class="pill">Inclui interface com engenheiros credenciados e emissão de ART</p>
         </div>
       </div>
     </section>
 
-    <!-- FAQ curtinho -->
-    <section id="faq">
-      <h2>Perguntas frequentes</h2>
-      <div class="grid" style="margin-top:10px">
-        <div class="col-4">
-          <div class="card">
-            <h3>Atende online?</h3>
-            <p class="muted">Sim. Reuniões por vídeo e assinatura eletrônica de documentos.</p>
-          </div>
+    <!-- CHAMADA -->
+    <section class="section card">
+      <h3>Como trabalhamos</h3>
+      <ul class="list-clean">
+        <li><span class="kbd">1</span> Entendimento do caso e análise de viabilidade</li>
+        <li><span class="kbd">2</span> Estratégia jurídica objetiva e cronograma de ações</li>
+        <li><span class="kbd">3</span> Acompanhamento contínuo e relatórios claros</li>
+      </ul>
+      <div class="cta" style="margin-top:14px">
+        <a class="btn" href="https://wa.me/556596590441?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta.">Falar no WhatsApp</a>
+        <a class="btn secondary" href="mailto:agulhodvogados@gmail.com">Enviar e-mail</a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <h3>Contato</h3>
+      <div class="grid cols-3">
+        <div class="card">
+          <strong>Telefone/WhatsApp:</strong><br>
+          <a href="https://wa.me/556596590441">+55 (65) 9 9659-0441</a>
         </div>
-        <div class="col-4">
-          <div class="card">
-            <h3>Honorários</h3>
-            <p class="muted">Definidos conforme tabela OAB/complexidade. Sempre por contrato.</p>
-          </div>
+        <div class="card">
+          <strong>E-mail:</strong><br>
+          <a href="mailto:agulhodvogados@gmail.com">agulhodvogados@gmail.com</a>
         </div>
-        <div class="col-4">
-          <div class="card">
-            <h3>Prazo de retorno</h3>
-            <p class="muted">Mensagens respondidas em até 1 dia útil.</p>
-          </div>
+        <div class="card">
+          <strong>OAB:</strong><br>
+          Joselma Pereira Agulhó — OAB-MT 9734
         </div>
       </div>
     </section>
 
-    <!-- Contato -->
-    <section id="contato">
-      <h2>Entre em contato</h2>
-      <p class="muted">Atendimento em {{Cidade/UF}} e online para todo o Brasil.</p>
-      <div class="cta">
-        <a class="btn" href="https://wa.me/55{{DDD}}{{NUMERO}}?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20uma%20avaliação.">Falar no WhatsApp</a>
-        <a class="btn btn-outline" href="mailto:{{email@profissional.com}}?subject=Contato%20via%20site">Enviar e-mail</a>
-      </div>
-      <p class="muted" style="margin-top:10px">
-        E-mail: <a href="mailto:{{email@profissional.com}}">{{email@profissional.com}}</a> • OAB/{{UF}} {{número}}
-      </p>
-    </section>
-
-    <!-- Rodapé -->
+    <!-- RODAPÉ / LGPD / OAB -->
     <footer>
-      <div class="row" style="align-items:flex-start">
-        <div>
-          <strong>{{Nome da Advogada}}</strong><br/>
-          OAB/{{UF}} {{número}} • {{Cidade/UF}}<br/>
-          <span class="muted">© <span id="y"></span> Todos os direitos reservados.</span>
-        </div>
-        <div style="margin-left:auto;text-align:right">
-          <a class="chip" href="#sobre">Sobre</a>
-          <a class="chip" href="#areas">Áreas</a>
-          <a class="chip" href="#contato">Contato</a>
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="legal">
-        <strong>LGPD & Política de Privacidade.</strong> Os dados informados são utilizados exclusivamente para retorno do contato, com base legal no art. 7º, V, da Lei 13.709/2018. Não realizamos compartilhamento com terceiros sem consentimento. Você pode solicitar a exclusão a qualquer momento pelo e-mail {{email@profissional.com}}.
-      </div>
-      <div class="notice" style="margin-top:10px">
-        <strong>Aviso de responsabilidade:</strong> Este site tem caráter informativo, não configura solicitação indiscriminada de causas, nem promessa de resultado. Cada caso é único e depende de análise específica.
+      <div><strong>Agulhó Advocacia e Consultoria Jurídica</strong> · OAB-MT 9734</div>
+      <div style="margin-top:6px">
+        Este site tem caráter informativo, em conformidade com as normas de publicidade da OAB. 
+        Não constitui promessa de resultado nem substitui consulta individualizada. 
+        Dados de contato são tratados conforme a LGPD; ao enviar mensagens, você concorda com o uso para retorno do atendimento.
       </div>
     </footer>
-
   </div>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
