@@ -1,332 +1,97 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Prime Fluxo – Afiliado de apuestas en línea (México)</title>
-  <meta name="description" content="Prime Fluxo es un sitio informativo y de afiliación que presenta bonos de bienvenida válidos en México, con enlaces hacia operadores licenciados. Juega de forma responsable. Prohibido para menores de 18 años." />
-  <meta name="keywords" content="Betway México, bono de bienvenida, casino en línea, apuestas deportivas, juego responsable, afiliado México, Prime Fluxo" />
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --accent: #22c55e;
-      --text: #e2e8f0;
-      --muted: #94a3b8;
-      --danger: #f97316;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #182135 0%, #020617 55%, #000 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    header {
-      background: rgba(2,6,23,0.85);
-      border-bottom: 1px solid rgba(148,163,184,0.15);
-      backdrop-filter: blur(8px);
-      position: sticky;
-      top: 0;
-      z-index: 40;
-    }
-    .navbar {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.5rem;
-      padding: 0.8rem 1.25rem;
-    }
-    .brand {
-      font-weight: 700;
-      font-size: 1.1rem;
-      letter-spacing: .04em;
-    }
-    nav a {
-      color: var(--muted);
-      text-decoration: none;
-      margin-left: 1rem;
-      font-size: 0.9rem;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    .hero {
-      max-width: 1100px;
-      margin: 1.5rem auto 1.5rem;
-      padding: 1.25rem 1.25rem 0;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 1.5rem;
-    }
-    .hero-left h1 {
-      font-size: clamp(1.9rem, 3.2vw, 2.6rem);
-      margin-bottom: .7rem;
-    }
-    .hero-left p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-    .tag {
-      display: inline-flex;
-      align-items: center;
-      gap: .35rem;
-      background: rgba(34,197,94,0.12);
-      border: 1px solid rgba(34,197,94,0.4);
-      color: #fff;
-      padding: .25rem .65rem;
-      border-radius: 999px;
-      font-size: 0.7rem;
-      margin-bottom: .7rem;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-    }
-    .actions {
-      display: flex;
-      gap: 1rem;
-      margin-top: 1.1rem;
-    }
-    .btn {
-      background: var(--accent);
-      color: #000;
-      padding: .6rem 1.35rem;
-      border: none;
-      border-radius: .6rem;
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: .4rem;
-      font-size: .87rem;
-    }
-    .btn.secondary {
-      background: rgba(15,23,42,0.01);
-      border: 1px solid rgba(148,163,184,0.4);
-      color: #fff;
-    }
-    .hero-card {
-      background: radial-gradient(circle at top, #141c2e 0%, #020617 70%);
-      border: 1px solid rgba(148,163,184,0.12);
-      border-radius: 1rem 1rem 0 0;
-      padding: 1rem 1.25rem 1.25rem;
-      box-shadow: 0 14px 65px rgba(0,0,0,0.35);
-    }
-    .hero-card h2 {
-      font-size: 1.1rem;
-      margin-bottom: .3rem;
-    }
-    .offer {
-      background: rgba(34,197,94,0.03);
-      border: 1px solid rgba(34,197,94,0.25);
-      border-radius: .75rem;
-      padding: .6rem .85rem .65rem;
-      margin-top: .6rem;
-    }
-    .offer small {
-      color: var(--muted);
-    }
-    .main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 1.25rem 3rem;
-      display: grid;
-      grid-template-columns: 1.5fr .8fr;
-      gap: 1.5rem;
-    }
-    .card {
-      background: rgba(15,23,42,0.4);
-      border: 1px solid rgba(148,163,184,0.12);
-      border-radius: .9rem;
-      padding: 1rem 1.1rem 1.15rem;
-      margin-top: 1.25rem;
-    }
-    h3 {
-      margin-top: 0;
-      margin-bottom: .4rem;
-    }
-    ul {
-      padding-left: 1rem;
-    }
-    .alert {
-      background: rgba(249,115,22,0.07);
-      border: 1px solid rgba(249,115,22,0.35);
-      border-radius: .75rem;
-      padding: .5rem .85rem;
-      font-size: .75rem;
-      margin-top: 1rem;
-      color: #fff;
-    }
-    .badge-18 {
-      background: #dc2626;
-      display: inline-block;
-      padding: .15rem .65rem .25rem;
-      border-radius: .45rem;
-      font-weight: 700;
-      font-size: .68rem;
-      margin-right: .35rem;
-    }
-    footer {
-      border-top: 1px solid rgba(148,163,184,0.08);
-      padding: 1.2rem 1.25rem 1.8rem;
-      text-align: center;
-      color: var(--muted);
-      font-size: .75rem;
-      background: rgba(2,6,23,0.35);
-    }
-    footer a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 .4rem;
-      font-size: .78rem;
-    }
-    .operator-link {
-      display: inline-flex;
-      align-items: center;
-      gap: .3rem;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .mini {
-      font-size: .68rem;
-      color: var(--muted);
-      margin-top: .35rem;
-    }
-    @media (max-width: 950px) {
-      .hero, .main {
-        grid-template-columns: 1fr;
-      }
-      .actions {
-        flex-wrap: wrap;
-      }
-      nav {
-        display: none;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PrimeFluxo – Guía de apuestas reguladas (México & Perú)</title>
+<meta name="description" content="PrimeFluxo es un sitio informativo e independiente sobre apuestas reguladas. Revisamos bonos de bienvenida, métodos de pago y normas de juego responsable en México y Perú.">
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel="icon" href="/assets/favicon.ico">
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"PrimeFluxo",
+ "url":"https://primefluxo.online/",
+ "logo":"https://primefluxo.online/assets/logo.png",
+ "sameAs":[]
+}
+</script>
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <div class="brand">Prime Fluxo · Afiliados México</div>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="mexico.html">Ofertas México</a>
-        <a href="responsible.html">Juego responsable</a>
-        <a href="privacy.html">Privacidad</a>
-        <a href="terms.html">Términos</a>
-      </nav>
-    </div>
-  </header>
+<header>
+  <nav class="nav">
+    <a href="/index.html">Inicio</a>
+    <a href="/mexico.html">México</a>
+    <a href="/peru.html">Perú</a>
+    <a href="/responsible-gambling.html">Juego Responsable</a>
+    <a href="/terms.html">Términos</a>
+    <a href="/privacy.html">Privacidad</a>
+  </nav>
+</header>
 
+<main class="container">
   <section class="hero">
-    <div class="hero-left">
-      <span class="tag">Operadores con licencia · MX</span>
-      <h1>Bonos de bienvenida y apuestas en línea para México</h1>
-      <p>
-        Prime Fluxo es un sitio **informativo y de afiliación**. Aquí reunimos enlaces hacia promociones activas de operadores que aceptan jugadores en México, como Betway.mx. No somos la casa de apuestas ni procesamos pagos: solo te redirigimos al sitio oficial para que completes tu registro.
-      </p>
-      <div class="actions">
-        <a class="btn" href="mexico.html">Ver bonos disponibles</a>
-        <a class="btn secondary" href="responsible.html">Juego responsable</a>
-      </div>
-      <div class="alert">
-        <span class="badge-18">18+</span> El juego con dinero real implica riesgo de pérdida. Juega solo si es legal en tu jurisdicción. Si tienes dudas, consulta la <a href="responsible.html" style="color:#fff;text-decoration:underline;">página de juego responsable</a>.
-      </div>
-    </div>
-    <div class="hero-card">
-      <h2>Operadores recomendados (México)</h2>
-      <p class="mini">Enlaces con parámetro de afiliado · podemos recibir comisión.</p>
-      <div class="offer">
-        <strong>Betway México – Apuestas deportivas</strong><br />
-        Bono de bienvenida hasta $4,000 MXN en el primer depósito (según términos del operador).<br />
-        <a class="operator-link" href="https://betway.mx/bwp/sobmanchestercity2024/es-mx/?s=sp50272" rel="noopener noreferrer">Ir a Betway Sports →</a>
-        <div class="mini">Verifica condiciones, rollover y métodos disponibles en el sitio oficial.</div>
-      </div>
-      <div class="offer">
-        <strong>Betway México – Casino en línea</strong><br />
-        Paquete de bienvenida de casino + giros gratis (según promo vigente).<br />
-        <a class="operator-link" href="https://betway.mx/bwp/casino-welcome-50/es-mx/?s=sp50272" rel="noopener noreferrer">Ir a Betway Casino →</a>
-        <div class="mini">Promociones sujetas a modificación por el operador sin previo aviso.</div>
-      </div>
+    <h1>PrimeFluxo — Información y comparativas de apuestas reguladas</h1>
+    <p>
+      Somos un sitio <strong>informativo e independiente</strong> sobre apuestas en mercados regulados.
+      Aquí encontrarás <strong>bonos de bienvenida</strong>, métodos de pago, condiciones clave y avisos de
+      <a href="/responsible-gambling.html">juego responsable</a>. PrimeFluxo <strong>no es operador</strong> y no procesa apuestas:
+      enlazamos a operadores autorizados en cada país.
+    </p>
+    <p class="disclaimer">
+      18+. Juega con responsabilidad. La disponibilidad de promociones depende de tu ubicación y verificación KYC del operador.
+    </p>
+  </section>
+
+  <section id="paises">
+    <h2>Países que cubrimos</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>México</h3>
+        <p>Mercado regulado por la <strong>SEGOB</strong>. Consulta bonos y métodos de pago locales.</p>
+        <a class="btn" href="/mexico.html">Ver guías de México</a>
+      </article>
+      <article class="card">
+        <h3>Perú</h3>
+        <p>Operadores autorizados por <strong>MINCETUR</strong>. Lee términos locales y verificación.</p>
+        <a class="btn" href="/peru.html">Ver guías de Perú</a>
+      </article>
     </div>
   </section>
 
-  <main class="main">
-    <div>
-      <div class="card">
-        <h3>¿Quiénes somos?</h3>
-        <p>
-          <strong>Prime Fluxo</strong> es un sitio de contenido y referencia sobre promociones de juego en línea. Nuestro objetivo es facilitar al usuario el acceso a <em>bonos de bienvenida</em>, <em>ofertas de casino</em> y <em>apuestas deportivas</em> que estén disponibles en México, siempre apuntando al sitio original del operador.
-        </p>
-        <p>
-          No operamos juegos, no aceptamos depósitos ni realizamos retiros. Toda la relación comercial (registro, KYC, depósito, retiro, verificación de identidad, límites de juego) se realiza exclusivamente en la plataforma del operador.
-        </p>
-      </div>
+  <section id="bonos">
+    <h2>Cómo evaluar un bono de bienvenida</h2>
+    <ul>
+      <li><strong>Requisito de apuesta (rollover):</strong> veces que debes apostar el bono.</li>
+      <li><strong>Contribución por juego:</strong> slots vs. casino en vivo pueden ponderar distinto.</li>
+      <li><strong>Validez temporal:</strong> fecha límite para liberar el bono.</li>
+      <li><strong>Métodos de depósito elegibles:</strong> algunas promos excluyen ciertos métodos.</li>
+      <li><strong>Verificación KYC:</strong> es obligatoria para retirar.</li>
+    </ul>
+  </section>
 
-      <div class="card">
-        <h3>Avisos importantes para México</h3>
-        <ul>
-          <li>Prohibido para menores de 18 años.</li>
-          <li>Las promociones pueden variar por estado, residencia o IP.</li>
-          <li>Los bonos suelen requerir depósito mínimo y cumplir requisitos de apuesta (rollover).</li>
-          <li>Algunas promociones aplican solo a usuarios nuevos.</li>
-          <li>Revisa siempre los <a href="terms.html">términos y condiciones</a> del operador.</li>
-        </ul>
-      </div>
+  <section id="pagos">
+    <h2>Métodos de pago comunes</h2>
+    <p>Tarjetas, transferencias locales, billeteras, vouchers. Verifica límites, comisiones y tiempos de retiro en cada operador.</p>
+  </section>
 
-      <div class="card">
-        <h3>Juego responsable</h3>
-        <p>
-          Si el juego deja de ser entretenimiento, detente. Establece límites de depósito, de tiempo y de pérdida. Si tienes señales de juego problemático, busca ayuda especializada.
-        </p>
-        <p>
-          Consulta nuestra página de <a href="responsible.html">juego responsable</a> para encontrar recursos y contactos.
-        </p>
-      </div>
-    </div>
+  <section id="responsable">
+    <h2>Juego Responsable</h2>
+    <p>
+      Ofrecemos recursos y enlaces a herramientas de autocontrol, límites de depósito y autoexclusión.
+      Más detalles en <a href="/responsible-gambling.html">esta página</a>.
+    </p>
+  </section>
+</main>
 
-    <div>
-      <div class="card">
-        <h3>Documentos del sitio</h3>
-        <ul>
-          <li><a href="privacy.html">Política de privacidad</a></li>
-          <li><a href="terms.html">Términos y condiciones del sitio</a></li>
-          <li><a href="responsible.html">Juego responsable</a></li>
-          <li><a href="mexico.html">Ofertas activas (México)</a></li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Transparencia de afiliación</h3>
-        <p>
-          Algunos enlaces de este sitio son enlaces de afiliado. Esto significa que podemos recibir una comisión si completas tu registro o realizas un depósito válido en el operador de destino.
-        </p>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div>
-      © <span id="year"></span> Prime Fluxo. Sitio informativo y de afiliación. No somos casa de apuestas.
-    </div>
-    <div style="margin-top:.35rem;">
-      <a href="privacy.html">Privacidad</a>·
-      <a href="terms.html">Términos</a>·
-      <a href="responsible.html">Juego responsable</a>·
-      <a href="mexico.html">Ofertas México</a>
-    </div>
-    <div style="margin-top:.35rem;">
-      18+ Juega con responsabilidad.
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<footer class="footer">
+  <p>© PrimeFluxo. Sitio informativo/afiliado, no operador. 18+</p>
+  <p>
+    México: regulación por SEGOB. Perú: regulación por MINCETUR. 
+    Enlaces con <code>rel="sponsored nofollow"</code>.
+  </p>
+</footer>
 </body>
 </html>
