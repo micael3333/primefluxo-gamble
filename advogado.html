@@ -1,196 +1,214 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Agulhó Advocacia — Dra. Joselma Pereira Agulhó | OAB-MT 9734</title>
-  <meta name="description" content="Agulhó Advocacia e Consultoria Jurídica. Criminal, Contencioso Administrativo, Contencioso Tributário, Cível e Ambiental (ênfase em georreferenciamento). Atendimento em MT e região.">
-  <style>
-    :root{
-      --brand:#167e6b; --brand-2:#0f5b50; --ink:#1f2937; --muted:#6b7280;
-      --bg:#ffffff; --card:#f8fafc; --ring:rgba(22,126,107,.15); --radius:14px;
-    }
-    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.55}
-    a{color:var(--brand);text-decoration:none} a:hover{opacity:.9}
-    .wrap{max-width:1080px;margin:auto;padding:24px}
-    header{display:flex;gap:18px;align-items:center;justify-content:space-between;padding:18px 0}
-    .logo{display:flex;gap:14px;align-items:center}
-    .logo-mark{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff;
-      background:radial-gradient(100% 100% at 30% 20%,#1aa68d 0%,var(--brand) 60%,var(--brand-2) 100%);
-      box-shadow:0 6px 18px var(--ring)}
-    .logo h1{margin:0;font-size:20px;line-height:1.1}
-    .sub{color:var(--muted);font-size:12px;margin-top:2px}
-    .cta{display:flex;gap:10px;flex-wrap:wrap}
-    .btn{appearance:none;border:0;border-radius:999px;padding:12px 18px;background:var(--brand);
-      color:#fff;font-weight:600;display:inline-flex;gap:10px;align-items:center;box-shadow:0 10px 24px var(--ring);transition:.2s transform}
-    .btn.secondary{background:#e8f6f3;color:var(--brand)} .btn:hover{transform:translateY(-1px)}
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:26px 0}
-    .hero h2{font-size:36px;line-height:1.2;margin:0 0 10px} .hero p{margin:0 0 18px}
-    .card{background:var(--card);border-radius:var(--radius);padding:18px}
-    .grid{display:grid;gap:16px} @media(min-width:820px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:900px){.hero{grid-template-columns:1fr}}
-    h3{margin:0 0 10px;font-size:20px} ul{margin:10px 0 0 16px}
-    .badge{display:inline-block;background:#e8f6f3;color:var(--brand);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
-    .section{padding:32px 0} .pill{display:inline-block;border:1px solid #e5e7eb;border-radius:999px;padding:6px 12px;font-size:12px;color:var(--muted)}
-    footer{margin-top:26px;padding:22px 0;border-top:1px solid #e5e7eb;color:var(--muted);font-size:13px}
-    .list-clean{list-style:none;padding:0;margin:0;display:grid;gap:8px}
-    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#eef2f7;border-radius:6px;padding:2px 6px}
-    .about{display:grid;gap:22px;grid-template-columns: 0.9fr 1.1fr;align-items:center}
-    .about img{width:100%;height:auto;border-radius:16px;box-shadow:0 12px 30px rgba(0,0,0,.08)}
-    @media(max-width:900px){.about{grid-template-columns:1fr}}
-    .mini-gallery{display:grid;gap:10px;grid-template-columns:repeat(3,1fr);margin-top:10px}
-    .mini-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
-    nav{display:flex;gap:14px;flex-wrap:wrap}
-    nav a{font-weight:600;color:var(--ink)} nav a:hover{color:var(--brand)}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agulhó Advocacia — Dra. Joselma Pereira Agulhó | OAB-MT 9734</title>
+<meta name="description" content="Criminal, Contencioso Administrativo e Tributário, Cível e Ambiental (ênfase em georreferenciamento). Atendimento em MT.">
+<style>
+  :root{
+    --brand:#156f60; --brand-2:#0e544a; --ink:#111827; --muted:#6b7280;
+    --bg:#ffffff; --card:#f8fafc; --ring:rgba(21,111,96,.15); --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;line-height:1.55}
+  a{color:var(--brand);text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1100px;margin:auto;padding:0 20px}
+
+  /* ===== HEADER ===== */
+  .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);
+    backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #e5e7eb}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+  .logo{display:flex;gap:12px;align-items:center}
+  .logo-mark{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;
+    background:radial-gradient(100% 100% at 30% 20%,#1aa68d 0%,var(--brand) 60%,var(--brand-2) 100%);}
+  .logo h1{margin:0;font-size:18px;line-height:1.1}
+  .sub{color:var(--muted);font-size:12px}
+
+  /* ===== NAV / HAMBURGER ===== */
+  .nav-toggle{appearance:none;border:0;background:transparent;display:none;width:44px;height:44px;border-radius:8px}
+  .nav-toggle:focus{outline:2px solid var(--brand);outline-offset:2px}
+  .hamburger,.hamburger::before,.hamburger::after{
+    width:22px;height:2px;background:#111;border-radius:2px;display:block;position:relative;transition:.25s}
+  .hamburger::before,.hamburger::after{content:"";position:absolute;left:0}
+  .hamburger::before{top:-6px}.hamburger::after{top:6px}
+  nav.primary{display:flex;gap:18px;align-items:center}
+
+  .btn{appearance:none;border:0;border-radius:999px;padding:10px 14px;background:var(--brand);color:#fff;font-weight:600;
+    box-shadow:0 8px 20px var(--ring)}
+  .btn.secondary{background:#e8f6f3;color:var(--brand)}
+  .btn.block{display:block;text-align:center;width:100%}
+
+  /* MOBILE MENU */
+  @media (max-width: 860px){
+    .nav-toggle{display:grid;place-items:center}
+    /* hide desktop ctas on mobile header */
+    .desktop-cta{display:none}
+    nav.primary{position:fixed;top:60px;left:0;right:0;display:none;
+      flex-direction:column;gap:12px;padding:14px;background:#fff;border-bottom:1px solid #e5e7eb;
+      box-shadow:0 12px 30px rgba(0,0,0,.08)}
+    nav.primary.open{display:flex}
+  }
+
+  /* ===== HERO ===== */
+  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:24px 0}
+  .hero h2{font-size:36px;line-height:1.2;margin:0 0 10px}
+  .badge{display:inline-block;background:#e8f6f3;color:var(--brand);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
+  .card{background:var(--card);border-radius:var(--radius);padding:18px}
+
+  /* ===== ABOUT ===== */
+  .about{display:grid;gap:20px;grid-template-columns:.9fr 1.1fr;align-items:center;padding:10px 0 24px}
+  .mini{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+
+  /* ===== GRID / RESPONSIVE ===== */
+  .grid{display:grid;gap:16px}
+  @media(min-width:900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:900px){
+    .hero{grid-template-columns:1fr}
+    .about{grid-template-columns:1fr}
+  }
+
+  /* ===== FOOTER ===== */
+  footer{margin-top:10px;padding:22px 0;border-top:1px solid #e5e7eb;color:#6b7280;font-size:13px}
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <!-- CABEÇALHO -->
-    <header>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="wrap header-inner">
       <div class="logo">
         <div class="logo-mark">A</div>
         <div>
-          <h1>Agulhó Advocacia e Consultoria Jurídica</h1>
+          <h1>Agulhó Advocacia</h1>
           <div class="sub">Dra. Joselma Pereira Agulhó · OAB-MT 9734</div>
         </div>
       </div>
-      <div class="cta">
-        <a class="btn" href="https://wa.me/556596590441?text=Olá%2C%20gostaria%20de%20um%20atendimento.">WhatsApp</a>
-        <a class="btn secondary" href="mailto:agulhodvogados@gmail.com">agulhodvogados@gmail.com</a>
-      </div>
-    </header>
 
-    <!-- NAV SIMPLES -->
-    <nav>
-      <a href="#areas">Áreas</a>
-      <a href="#sobre">Quem somos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+      <!-- MOBILE TOGGLE -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu">
+        <span class="hamburger"></span>
+      </button>
 
+      <!-- DESKTOP NAV + CTAs -->
+      <nav id="primary-nav" class="primary">
+        <a href="#areas">Áreas</a>
+        <a href="#sobre">Quem somos</a>
+        <a href="#contato">Contato</a>
+        <!-- CTA’s aparecem DENTRO do menu no mobile; no desktop ficam à direita -->
+        <span class="desktop-cta" style="display:flex;gap:10px">
+          <a class="btn" href="https://wa.me/556596590441?text=Olá%2C%20gostaria%20de%20um%20atendimento.">WhatsApp</a>
+          <a class="btn secondary" href="mailto:agulhodvogados@gmail.com">E-mail</a>
+        </span>
+        <!-- versões mobile (renderizam apenas quando menu está aberto) -->
+        <a class="btn block" style="display:none" data-mobile-cta="wa" href="https://wa.me/556596590441?text=Olá%2C%20gostaria%20de%20um%20atendimento.">Falar no WhatsApp</a>
+        <a class="btn secondary block" style="display:none" data-mobile-cta="mail" href="mailto:agulhodvogados@gmail.com">Enviar e-mail</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
     <!-- HERO -->
-    <section class="hero card">
+    <section class="hero">
       <div>
         <span class="badge">Atuação estratégica</span>
         <h2>Defesa técnica e consultoria com foco em resultado</h2>
-        <p>Atuação em <strong>Criminal</strong>, <strong>Contencioso Administrativo</strong>, <strong>Contencioso Tributário</strong>, <strong>Cível</strong> e <strong>Ambiental</strong>, com ênfase em <strong>georreferenciamento</strong> e regularização fundiária.</p>
-        <div class="cta">
+        <p>Atuação em <strong>Criminal</strong>, <strong>Contencioso Administrativo</strong>, <strong>Contencioso Tributário</strong>, <strong>Cível</strong> e <strong>Ambiental</strong> — com ênfase em <strong>georreferenciamento</strong> e regularização fundiária.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
           <a class="btn" href="#contato">Agendar avaliação</a>
           <a class="btn secondary" href="#areas">Ver áreas de atuação</a>
         </div>
       </div>
       <div class="card">
-        <h3>Atendimento</h3>
-        <ul class="list-clean">
+        <h3 style="margin:0 0 8px">Atendimento</h3>
+        <ul style="margin:0 0 0 18px">
           <li>Consultas presenciais e on-line</li>
           <li>Atuação em Mato Grosso e região</li>
-          <li>Relatórios claros e acompanhamento do processo</li>
+          <li>Relatórios claros e acompanhamento de cada etapa</li>
         </ul>
       </div>
     </section>
 
-    <!-- QUEM SOMOS + FOTO -->
-    <section id="sobre" class="section about">
-      <img src="assets/joselma.jpg" alt="Dra. Joselma Pereira Agulhó em seu escritório">
+    <!-- QUEM SOMOS -->
+    <section id="sobre" class="about">
+      <img src="assets/joselma.jpg" alt="Dra. Joselma Pereira Agulhó">
       <div>
         <h3>Quem somos</h3>
-        <p>A <strong>Agulhó Advocacia e Consultoria Jurídica</strong> alia técnica, proximidade e linguagem clara. A condução dos casos é feita pela <strong>Dra. Joselma Pereira Agulhó (OAB-MT 9734)</strong>, com experiência em demandas contenciosas e consultivas — do planejamento preventivo à atuação em audiências, sustentações e negociações.</p>
-        <p><em>Nossa diretriz</em>: estratégia objetiva, transparência sobre prazos e custos, e compromisso com soluções seguras para pessoas e empresas de Mato Grosso e região.</p>
-
-        <div class="mini-gallery">
-          <img src="assets/joselma.jpg" alt="Atendimento jurídico — Agulhó Advocacia">
-          <img src="assets/joselma.jpg" alt="Consultoria — Agulhó Advocacia">
-          <img src="assets/joselma.jpg" alt="Reunião — Agulhó Advocacia">
+        <p>A <strong>Agulhó Advocacia e Consultoria Jurídica</strong> alia técnica, proximidade e linguagem clara. Condução pela <strong>Dra. Joselma Pereira Agulhó (OAB-MT 9734)</strong>, com experiência em demandas contenciosas e consultivas — do planejamento preventivo à atuação em audiências, sustentações e negociações.</p>
+        <p><em>Diretrizes:</em> estratégia objetiva, transparência sobre prazos/custos e compromisso com soluções seguras para pessoas e empresas.</p>
+        <div class="mini">
+          <img src="assets/joselma.jpg" alt="">
+          <img src="assets/joselma.jpg" alt="">
+          <img src="assets/joselma.jpg" alt="">
         </div>
       </div>
     </section>
 
     <!-- ÁREAS -->
-    <section id="areas" class="section">
+    <section id="areas" style="padding:12px 0 24px">
       <h3>Áreas de atuação</h3>
       <div class="grid cols-3">
-        <div class="card">
-          <h4>Criminal</h4>
-          <ul>
-            <li>Defesa em inquérito e ação penal</li>
-            <li>Audiências de custódia e habeas corpus</li>
-            <li>Crimes contra o patrimônio e a honra</li>
-          </ul>
+        <div class="card"><h4>Criminal</h4>
+          <ul><li>Inquérito e ação penal</li><li>Habeas corpus e audiências</li><li>Crimes contra patrimônio e honra</li></ul></div>
+        <div class="card"><h4>Contencioso Administrativo</h4>
+          <ul><li>PADs e sindicâncias</li><li>Licitações e contratos</li><li>Recursos perante órgãos públicos</li></ul></div>
+        <div class="card"><h4>Contencioso Tributário</h4>
+          <ul><li>Autos de infração e execuções</li><li>Recuperação de créditos</li><li>Consultas e planejamento</li></ul></div>
+        <div class="card"><h4>Cível</h4>
+          <ul><li>Contratos e responsabilidade civil</li><li>Família e sucessões</li><li>Consumidor</li></ul></div>
+        <div class="card" style="grid-column:span 2"><h4>Ambiental (ênfase em Georreferenciamento)</h4>
+          <p>Assessoria completa a propriedades rurais e empreendimentos: <strong>georreferenciamento (SIGEF/INCRA)</strong>, CAR, licenças ambientais, outorga, defesas administrativas e TACs. Integração com engenheiros credenciados e emissão de ART.</p>
         </div>
-        <div class="card">
-          <h4>Contencioso Administrativo</h4>
-          <ul>
-            <li>Processos disciplinares e sindicâncias</li>
-            <li>Licitações e contratos públicos</li>
-            <li>Recursos perante órgãos da Administração</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h4>Contencioso Tributário</h4>
-          <ul>
-            <li>Autos de infração e execuções fiscais</li>
-            <li>Recuperação de créditos e parcelamentos</li>
-            <li>Consultas formais e planejamento</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h4>Cível</h4>
-          <ul>
-            <li>Contratos e responsabilidade civil</li>
-            <li>Família e sucessões (divórcio, inventário)</li>
-            <li>Direitos do consumidor</li>
-          </ul>
-        </div>
-        <div class="card" style="grid-column: span 2;">
-          <h4>Ambiental (ênfase em Georreferenciamento)</h4>
-          <p>Assessoria completa para propriedades rurais e empreendimentos:</p>
-          <ul>
-            <li><strong>Georreferenciamento</strong> (SIGEF/INCRA), retificação e confrontações</li>
-            <li>CAR, licenças ambientais, outorga e regularização de passivos</li>
-            <li>Defesas administrativas e TACs perante órgãos ambientais</li>
-          </ul>
-          <p class="pill">Integração com engenheiros credenciados e emissão de ART</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CHAMADA -->
-    <section class="section card">
-      <h3>Valores</h3>
-      <ul class="list-clean">
-        <li><span class="kbd">Transparência</span> — informações claras sobre estratégia, prazos e custos.</li>
-        <li><span class="kbd">Técnica</span> — atuação baseada em pesquisa e atualização constante.</li>
-        <li><span class="kbd">Proximidade</span> — atendimento humano, com comunicação contínua.</li>
-      </ul>
-      <div class="cta" style="margin-top:14px">
-        <a class="btn" href="https://wa.me/556596590441?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta.">Falar no WhatsApp</a>
-        <a class="btn secondary" href="mailto:agulhodvogados@gmail.com">Enviar e-mail</a>
       </div>
     </section>
 
     <!-- CONTATO -->
-    <section id="contato" class="section">
-      <h3>Contato</h3>
+    <section id="contato" class="card" style="margin:0 0 24px">
+      <h3 style="margin-top:0">Contato</h3>
       <div class="grid cols-3">
-        <div class="card"><strong>WhatsApp:</strong><br>
-          <a href="https://wa.me/556596590441">+55 (65) 9 9659-0441</a></div>
-        <div class="card"><strong>E-mail:</strong><br>
-          <a href="mailto:agulhodvogados@gmail.com">agulhodvogados@gmail.com</a></div>
-        <div class="card"><strong>OAB:</strong><br>
-          Joselma Pereira Agulhó — OAB-MT 9734</div>
+        <div class="card" style="padding:12px"><strong>WhatsApp:</strong><br><a href="https://wa.me/556596590441">+55 (65) 9 9659-0441</a></div>
+        <div class="card" style="padding:12px"><strong>E-mail:</strong><br><a href="mailto:agulhodvogados@gmail.com">agulhodvogados@gmail.com</a></div>
+        <div class="card" style="padding:12px"><strong>OAB:</strong><br>Joselma Pereira Agulhó — OAB-MT 9734</div>
       </div>
     </section>
+  </main>
 
-    <!-- RODAPÉ -->
-    <footer>
-      <div><strong>Agulhó Advocacia e Consultoria Jurídica</strong> · OAB-MT 9734</div>
-      <div style="margin-top:6px">
-        Este site tem caráter informativo, em conformidade com as normas de publicidade da OAB.  
-        Não constitui promessa de resultado nem substitui consulta individualizada.  
-        Dados de contato são tratados conforme a LGPD; ao enviar mensagens, você concorda com o uso para retorno do atendimento.
-      </div>
-    </footer>
-  </div>
+  <footer class="wrap">
+    <div><strong>Agulhó Advocacia e Consultoria Jurídica</strong> · OAB-MT 9734</div>
+    <div style="margin-top:6px">
+      Este site tem caráter informativo, em conformidade com as normas de publicidade da OAB.
+      Não constitui promessa de resultado. Dados de contato tratados conforme a LGPD para retorno do atendimento.
+    </div>
+  </footer>
+
+<script>
+  // abre/fecha menu e liga/desliga CTAs mobile
+  const btn = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('primary-nav');
+  const wa = nav.querySelector('[data-mobile-cta="wa"]');
+  const mail = nav.querySelector('[data-mobile-cta="mail"]');
+
+  const syncCTAs = () => {
+    const isMobile = window.matchMedia('(max-width: 860px)').matches;
+    wa.style.display = isMobile ? 'block' : 'none';
+    mail.style.display = isMobile ? 'block' : 'none';
+  };
+  syncCTAs();
+  window.addEventListener('resize', syncCTAs);
+
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  // fecha menu ao clicar em um link (mobile)
+  nav.addEventListener('click', (e)=>{
+    if(e.target.tagName === 'A' && nav.classList.contains('open')){
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+</script>
 </body>
 </html>
