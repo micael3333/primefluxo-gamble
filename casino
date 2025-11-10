@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Casino online (PT) – BacanaPlay em destaque | Prime Fluxo</title>
+  <meta name="description" content="Entenda como funcionam slots, jogos de mesa e jackpots no mercado português regulado. Conheça o BacanaPlay (licença SRIJ n.º 025) e as promoções disponíveis.">
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+  <header class="container">
+    <a href="/" class="brand">Prime Fluxo</a>
+    <nav>
+      <a href="/operadores-licenciados.html">Operadores Licenciados</a>
+      <a href="/casino.html" aria-current="page">Casino</a>
+      <a href="/jogo-responsavel.html">Jogo Responsável</a>
+      <a href="/contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Casino online regulado em Portugal</h1>
+    <p>No mercado português, casinos online licenciados pelo SRIJ disponibilizam slots, jogos de mesa e jackpots, com auditoria e regras definidas por lei.  [oai_citation:10‡srij.turismodeportugal.pt](https://www.srij.turismodeportugal.pt/pt/jogos-e-apostas-online/entidades-licenciadas?utm_source=chatgpt.com)</p>
+
+    <div class="grid cards" style="margin-top:16px;">
+      <article class="card">
+        <h3>Bónus de boas-vindas</h3>
+        <p>O BacanaPlay tem formatos de bónus de boas-vindas (ex.: 100% até 250€), além de campanhas como torneios/prize drops. Ver termos no site oficial.</p>
+        <p><a class="btn" href="https://www.bacanaplay.pt/promocoes/bonus-boas-vindas/" rel="nofollow">Ver promoções (site oficial)</a></p>
+        <p class="muted"> [oai_citation:11‡bacanaplay.pt](https://www.bacanaplay.pt/promocoes/bonus-boas-vindas/?utm_source=chatgpt.com)</p>
+      </article>
+
+      <article class="card">
+        <h3>Como ativar</h3>
+        <ol>
+          <li>Crie conta no operador licenciado (ver abaixo).</li>
+          <li>Entre na secção <em>Promoções</em> e leia os termos.</li>
+          <li>Faça o 1.º depósito e confirme a ativação do bónus.</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h3>BacanaPlay (SRIJ n.º 025)</h3>
+        <p>Casino online licenciado em PT, foco em slots/mesa/jackpots. Sem sportsbook.  [oai_citation:12‡srij.turismodeportugal.pt](https://www.srij.turismodeportugal.pt/sites/default/files/2023-06/Licencca_025_bacanaplay.pdf?utm_source=chatgpt.com)</p>
+        <div class="row">
+          <a class="btn primary" href="https://site.gotobacanaplay.com/index.php?aname=micaelvasquess" rel="nofollow">Abrir conta</a>
+          <a class="btn" href="https://site.gotobacanaplay.com/index.php?prod_id=bpdownload&aname=micaelvasquess" rel="nofollow">Baixar App</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>18+</strong> Jogue com responsabilidade. Recursos: 
+        <a href="https://www.srij.turismodeportugal.pt/pt/sos-jogadores/autoexclusao-e-proibicao" rel="nofollow">Autoexclusão SRIJ</a> • 
+        <a href="https://jogoresponsavel.sapo.pt/autoexclusao-e-ferramentas-de-controlo.html" rel="nofollow">Jogo Responsável</a>
+      </p>
+      <p>Este site é um <strong>agregador</strong> e <strong>não oferece jogos</strong>.</p>
+      <p><a href="/termos.html">Termos</a> • <a href="/privacidade.html">Privacidade</a> • <a href="/cookies.html">Cookies</a> • <a href="/contato.html">Contato</a></p>
+    </div>
+  </footer>
+
+  <script src="/scripts/consent.js" defer></script>
+</body>
+</html>
