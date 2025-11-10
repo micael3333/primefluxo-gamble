@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Operadores licenciados (SRIJ) – Prime Fluxo</title>
+  <link rel="stylesheet" href="/styles/main.css" />
+  <meta name="description" content="Lista informativa de operadores licenciados em Portugal (SRIJ). Promovemos apenas marcas com licença válida.">
+</head>
+<body>
+  <header class="container">
+    <a href="/" class="brand">Prime Fluxo</a>
+    <nav>
+      <a href="/operadores-licenciados.html" aria-current="page">Operadores Licenciados</a>
+      <a href="/casino.html">Casino</a>
+      <a href="/jogo-responsavel.html">Jogo Responsável</a>
+      <a href="/contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Operadores licenciados pelo SRIJ</h1>
+    <p>Em Portugal, apenas entidades licenciadas pelo SRIJ podem explorar jogos e apostas online. A lista oficial encontra-se no site do regulador.  [oai_citation:7‡srij.turismodeportugal.pt](https://www.srij.turismodeportugal.pt/pt/jogos-e-apostas-online/entidades-licenciadas?utm_source=chatgpt.com)</p>
+
+    <table class="table">
+      <thead><tr><th>Operador</th><th>Licença</th><th>Segmento</th><th>Ir para</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>BacanaPlay</td>
+          <td>SRIJ n.º 025 (prorrogada)  [oai_citation:8‡srij.turismodeportugal.pt](https://www.srij.turismodeportugal.pt/sites/default/files/2023-06/Licencca_025_bacanaplay.pdf?utm_source=chatgpt.com)</td>
+          <td>Casino Online</td>
+          <td>
+            <a class="btn" href="https://site.gotobacanaplay.com/index.php?aname=micaelvasquess" rel="nofollow">Abrir conta</a>
+            <a class="btn" href="https://site.gotobacanaplay.com/index.php?prod_id=bpdownload&aname=micaelvasquess" rel="nofollow">App</a>
+          </td>
+        </tr>
+        <!-- Quando for adicionar outras marcas SRIJ, replicar a linha -->
+      </tbody>
+    </table>
+
+    <p class="muted">Os termos, bónus e disponibilidade de jogos variam. Consulte o site oficial do operador para informações atualizadas.  [oai_citation:9‡bacanaplay.pt](https://www.bacanaplay.pt/promocoes/bonus-boas-vindas/?utm_source=chatgpt.com)</p>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>18+</strong> Jogue com responsabilidade. Recursos: 
+        <a href="https://www.srij.turismodeportugal.pt/pt/sos-jogadores/autoexclusao-e-proibicao" rel="nofollow">Autoexclusão SRIJ</a> • 
+        <a href="https://jogoresponsavel.sapo.pt/autoexclusao-e-ferramentas-de-controlo.html" rel="nofollow">Jogo Responsável</a>
+      </p>
+      <p>Este site é um <strong>agregador</strong> e <strong>não oferece jogos</strong>.</p>
+      <p><a href="/termos.html">Termos</a> • <a href="/privacidade.html">Privacidade</a> • <a href="/cookies.html">Cookies</a> • <a href="/contato.html">Contato</a></p>
+    </div>
+  </footer>
+
+  <script src="/scripts/consent.js" defer></script>
+</body>
+</html>
