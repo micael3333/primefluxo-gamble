@@ -1,152 +1,127 @@
 <!doctype html>
-<html lang="es-MX">
+<html lang="pt-PT">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>PrimeFluxo · Bonos de Bienvenida Betway México</title>
-  <meta name="description" content="Información objetiva sobre el bono de bienvenida de Betway México para apuestas deportivas y casino. Juego responsable. Solo para mayores de 18 años.">
-  <style>
-    :root{
-      --brand:#0ea5a3; --brand2:#067a79; --ink:#0f172a; --muted:#64748b; --bg:#ffffff; --card:#f8fafc; --ring:rgba(14,165,163,.16);
-      --radius:14px
-    }
-    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
-    a{color:var(--brand);text-decoration:none} img{max-width:100%;display:block}
-    .wrap{max-width:1100px;margin:auto;padding:0 20px}
-    /* header */
-    .site-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(10px);
-      border-bottom:1px solid #e5e7eb}
-    .header-inner{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 0}
-    .logo{display:flex;gap:10px;align-items:center}
-    .mark{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;color:#fff;
-      background:radial-gradient(100% 100% at 30% 20%,#3ddbd8 0%,var(--brand) 55%,var(--brand2) 100%)}
-    .logo h1{margin:0;font-size:18px}
-    .sub{color:var(--muted);font-size:12px}
-    /* nav mobile */
-    .toggle{display:none;border:0;background:transparent;width:44px;height:44px;border-radius:8px}
-    .hamb,.hamb::before,.hamb::after{width:22px;height:2px;background:#111;border-radius:2px;display:block;position:relative;transition:.25s}
-    .hamb::before,.hamb::after{content:"";position:absolute;left:0}.hamb::before{top:-6px}.hamb::after{top:6px}
-    nav.primary{display:flex;gap:18px;align-items:center}
-    .btn{border:0;border-radius:999px;padding:10px 14px;background:var(--brand);color:#fff;font-weight:600;box-shadow:0 8px 20px var(--ring)}
-    .btn.alt{background:#e6fbfb;color:var(--brand)}
-    .btn.block{display:block;width:100%;text-align:center}
-    @media (max-width:860px){
-      .toggle{display:grid;place-items:center}
-      nav.primary{position:fixed;top:60px;left:0;right:0;display:none;flex-direction:column;gap:12px;padding:14px;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 12px 32px rgba(0,0,0,.08)}
-      nav.primary.open{display:flex}
-      .desktop-cta{display:none}
-      [data-mobile-cta]{display:block}
-    }
-    /* hero */
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:24px 0}
-    .badge{display:inline-block;background:#e6fbfb;color:var(--brand);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
-    .hero h2{margin:8px 0 10px;font-size:36px;line-height:1.2}
-    .card{background:var(--card);border-radius:var(--radius);padding:18px}
-    /* grid */
-    .grid{display:grid;gap:16px}
-    @media(min-width:900px){.cols-3{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:900px){.hero{grid-template-columns:1fr}}
-    footer{margin-top:16px;padding:22px 0;border-top:1px solid #e5e7eb;color:#6b7280;font-size:13px}
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BacanaPlay em Portugal – Comparador Prime Fluxo</title>
+  <meta name="description" content="Prime Fluxo é um site agregador informativo sobre operadores licenciados em Portugal. Veja bónus, meios de pagamento e regras de jogo responsável do BacanaPlay (SRIJ n.º 025)." />
+  <link rel="stylesheet" href="/styles/main.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap header-inner">
-    <div class="logo">
-      <div class="mark">PF</div>
-      <div>
-        <h1>PrimeFluxo · México</h1>
-        <div class="sub">Información independiente sobre promociones de operadores con licencia (SEGOB). 18+</div>
+  <!-- Age Gate -->
+  <div id="age-gate" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+    <div class="modal-card">
+      <h2 id="ageTitle">Conteúdo destinado a maiores de 18 anos</h2>
+      <p>Este site é um <strong>agregador informativo</strong> sobre operadores licenciados em Portugal. Jogue com responsabilidade.</p>
+      <div class="row">
+        <button id="age-accept" class="btn primary">Tenho 18 anos ou mais</button>
+        <a class="btn" href="https://www.srij.turismodeportugal.pt/pt">Sair</a>
       </div>
     </div>
+  </div>
 
-    <button class="toggle" aria-label="Abrir menú" aria-expanded="false"><span class="hamb"></span></button>
-    <nav class="primary" id="nav">
-      <a href="#bonos">Bonos</a>
-      <a href="#preguntas">Preguntas</a>
-      <a href="responsible-gambling.html">Juego responsable</a>
-      <a href="privacy.html">Privacidad</a>
-      <a href="terms.html">Términos</a>
-
-      <span class="desktop-cta" style="display:flex;gap:10px">
-        <a class="btn" href="mexico.html">Ver bonos Betway</a>
-        <a class="btn alt" href="#preguntas">Cómo funciona</a>
-      </span>
-      <a data-mobile-cta class="btn block" href="mexico.html" style="display:none">Ver bonos Betway</a>
-      <a data-mobile-cta class="btn alt block" href="#preguntas" style="display:none">Cómo funciona</a>
+  <header class="container">
+    <a href="/" class="brand"><img src="/public/img/logo-primefluxo.svg" alt="" width="28" height="28"/> Prime Fluxo</a>
+    <nav>
+      <a href="/operadores-licenciados.html">Operadores Licenciados</a>
+      <a href="/casino.html">Casino</a>
+      <a href="/jogo-responsavel.html">Jogo Responsável</a>
+      <a href="/contato.html">Contato</a>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main class="wrap">
+  <main class="container">
+    <section class="hero">
+      <div class="row" style="justify-content:space-between;">
+        <div>
+          <h1>BacanaPlay 🇵🇹 — Casino online licenciado (SRIJ n.º 025)</h1>
+          <p class="muted">Comparador independente. Não operamos jogo. Promovemos apenas operadores autorizados.  [oai_citation:1‡srij.turismodeportugal.pt](https://www.srij.turismodeportugal.pt/sites/default/files/2023-06/Licencca_025_bacanaplay.pdf?utm_source=chatgpt.com)</p>
+          <div class="row">
+            <a class="btn primary" href="https://site.gotobacanaplay.com/index.php?aname=micaelvasquess" rel="nofollow">Abrir conta no BacanaPlay</a>
+            <a class="btn" href="https://site.gotobacanaplay.com/index.php?prod_id=bpdownload&aname=micaelvasquess" rel="nofollow">Download da App</a>
+          </div>
+          <p class="muted">Bónus, torneios e ofertas mudam com frequência — confira detalhes atualizados no site oficial.  [oai_citation:2‡bacanaplay.pt](https://www.bacanaplay.pt/promocoes/bonus-boas-vindas/?utm_source=chatgpt.com)</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div>
-      <span class="badge">Betway México · Bienvenida</span>
-      <h2>Consulta las <strong>ofertas de bienvenida</strong> vigentes y apuesta de forma responsable</h2>
-      <p>Reunimos, en un solo lugar, los detalles clave del bono de bienvenida de <strong>Betway México</strong> para <strong>apuestas deportivas</strong> y <strong>casino</strong>: requisitos, rollover, vigencia, métodos de depósito admitidos y exclusiones más comunes.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
-        <a class="btn" href="mexico.html">Ver bonos disponibles</a>
-        <a class="btn alt" href="responsible-gambling.html">Guía de juego responsable</a>
+    <section style="margin-top:24px;">
+      <h2>Destaques verificados</h2>
+      <div class="grid cards">
+        <article class="card">
+          <span class="badge">Licença & Regulação</span>
+          <h3>Licenciado pelo SRIJ (n.º 025)</h3>
+          <p>O BacanaPlay opera legalmente em Portugal sob a licença nº 025. Consulta pública e prorrogação oficial disponíveis. </p>
+          <p><a class="btn" href="https://www.srij.turismodeportugal.pt/sites/default/files/2023-06/Licencca_025_bacanaplay.pdf" rel="nofollow">Ver licença SRIJ</a></p>
+          <p class="muted"> [oai_citation:3‡srij.turismodeportugal.pt](https://www.srij.turismodeportugal.pt/sites/default/files/2023-06/Licencca_025_bacanaplay.pdf?utm_source=chatgpt.com)</p>
+        </article>
+
+        <article class="card">
+          <span class="badge">Oferta</span>
+          <h3>Bónus & promoções</h3>
+          <p>Bónus de boas-vindas (ex.: 100% até 250€) e campanhas recorrentes como torneios, prize drops, etc. Verifique termos no site oficial.</p>
+          <p class="muted">Exemplos e formatos na página de promoções do operador.  [oai_citation:4‡bacanaplay.pt](https://www.bacanaplay.pt/promocoes/bonus-boas-vindas/?utm_source=chatgpt.com)</p>
+        </article>
+
+        <article class="card">
+          <span class="badge">Cobertura</span>
+          <h3>Casino online (sem apostas desportivas)</h3>
+          <p>O foco do BacanaPlay é <strong>casino</strong> (slots, mesa, jackpots). Não há sportsbook ativo em PT segundo fontes públicas.</p>
+          <p class="muted"> [oai_citation:5‡apostalegal.pt](https://apostalegal.pt/bacana-play-casino-portugal/?utm_source=chatgpt.com)</p>
+        </article>
+
+        <article class="card">
+          <span class="badge">Pagamento</span>
+          <h3>Métodos de pagamento</h3>
+          <p>Cartão, MBWay e outros métodos locais podem estar disponíveis; confirme sempre na área de caixa do operador.</p>
+          <p class="muted">As opções e limites podem variar por campanha/perfil. Consulte o site oficial.  [oai_citation:6‡bacanaplay.pt](https://www.bacanaplay.pt/?utm_source=chatgpt.com)</p>
+        </article>
+      </div>
+    </section>
+
+    <section style="margin-top:28px;">
+      <h2>Como começar em 3 passos</h2>
+      <ol>
+        <li>Clique em <kbd>Abrir conta</kbd> e completa o registo no site oficial do operador.</li>
+        <li>Confere a secção <kbd>Promoções</kbd> para ver bónus ativos e respetivos termos.</li>
+        <li>Define limites de depósito e tempo de sessão (Jogo Responsável) antes de jogar.</li>
+      </ol>
+    </section>
+
+    <section class="notice" style="margin-top:28px;">
+      <strong>Divulgação de Afiliado:</strong> a Prime Fluxo pode receber comissão se você abrir conta pelos nossos links. Somos comparador independente e não operamos jogo.
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>18+</strong> Jogue com responsabilidade. Recursos: 
+        <a href="https://www.srij.turismodeportugal.pt/pt/sos-jogadores/autoexclusao-e-proibicao" rel="nofollow">Autoexclusão SRIJ</a> • 
+        <a href="https://jogoresponsavel.sapo.pt/autoexclusao-e-ferramentas-de-controlo.html" rel="nofollow">Jogo Responsável</a>
+      </p>
+      <p>Este site é um <strong>agregador</strong> e <strong>não oferece jogos</strong>. Promovemos apenas operadores <strong>licenciados pelo SRIJ</strong>.</p>
+      <p>
+        <a href="/termos.html">Termos</a> • 
+        <a href="/privacidade.html">Privacidade</a> • 
+        <a href="/cookies.html">Cookies</a> • 
+        <a href="/contato.html">Contato</a>
+      </p>
+      <p class="muted">{{PRIME FLUXO}} • NIF {{NIF}} • {{ENDERECO}} • <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner hidden" role="dialog" aria-live="polite">
+    <div class="container">
+      <p>Usamos cookies para melhorar a experiência. Escolha:</p>
+      <div class="row">
+        <button id="cookie-reject" class="btn">Rejeitar</button>
+        <button id="cookie-accept" class="btn primary">Aceitar</button>
+        <a href="/cookies.html" class="btn">Gerir Preferências</a>
       </div>
     </div>
-    <div class="card">
-      <h3 style="margin:0 0 8px">Resumen rápido</h3>
-      <ul style="margin:0 0 0 18px">
-        <li>Solo para mayores de 18 años (18+).</li>
-        <li>Promociones sujetas a términos y condiciones del operador.</li>
-        <li>Puede aplicar requisito de apuesta (rollover) y restricciones por método de pago.</li>
-        <li>Verifica tu identidad (KYC) para retirar.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- BONOS -->
-  <section id="bonos" style="padding:6px 0 18px">
-    <h3>Bonos destacados Betway (MX)</h3>
-    <div class="grid cols-3">
-      <div class="card">
-        <h4>Apuestas deportivas</h4>
-        <p>Bono de bienvenida con condiciones promocionales para nuevos clientes. Consulta elegibilidad, tope y rollover directamente en la página oficial.</p>
-        <a class="btn" href="mexico.html">Ir al detalle</a>
-      </div>
-      <div class="card">
-        <h4>Casino</h4>
-        <p>Oferta de bienvenida de casino con términos específicos para tragamonedas/juegos de mesa. Revisa contribuciones al rollover y juegos excluidos.</p>
-        <a class="btn" href="mexico.html#casino">Ver en Betway</a>
-      </div>
-      <div class="card">
-        <h4>Métodos de pago</h4>
-        <p>Tarjetas, transferencias y opciones locales. Algunos métodos pueden quedar fuera de la promo. Confirma en la página oficial antes de depositar.</p>
-        <a class="btn alt" href="mexico.html#pagos">Métodos admitidos</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="preguntas" class="card" style="margin:0 0 18px">
-    <h3 style="margin-top:0">Preguntas frecuentes</h3>
-    <p><strong>¿PrimeFluxo es casa de apuestas?</strong> No. Somos un sitio informativo/afiliado. No operamos juego; enlazamos a operadores con licencia en México. Si te registras a través de nuestros enlaces, podemos recibir una compensación sin costo adicional para ti.</p>
-    <p><strong>¿Dónde veo los términos completos?</strong> En la página oficial del operador enlazada desde <a href="mexico.html">mexico.html</a>. Además, mantenemos nuestras <a href="terms.html">Condiciones</a>, <a href="privacy.html">Privacidad</a> y <a href="responsible-gambling.html">Juego responsable</a>.</p>
-  </section>
-
-</main>
-
-<footer class="wrap">
-  <div><strong>PrimeFluxo</strong> — recurso informativo independente sobre operadores com licença em México (SEGOB). 18+.</div>
-
-  <div style="margin-top:6px">
-    <strong>Entidad legal:</strong> M. Vasquez de Barros (CPF 053.225.641-79)<br>
-    <strong>Contacto:</strong> <a href="mailto:michaelvasquez344@gmail.com">michaelvasquez344@gmail.com</a> · 
-    <a href="https://wa.me/5566996570102">+55 (66) 99657-0102</a><br>
-    Dirección comercial: Rua das Papoulas 187 – Jardim Cuiabá · Cuiabá-MT (BR)
   </div>
 
-  <div style="margin-top:10px">
-    Este sitio actúa únicamente como afiliado y no ofrece servicios de juego.  
-    Los enlaces pueden generar comisiones sin costo adicional para el usuario.  
-    Juega responsablemente — si el juego deja de ser entretenimiento, busca ayuda especializada.
-  </div>
-</footer>
+  <script src="/scripts/consent.js" defer></script>
+</body>
+</html>
