@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Política de Cookies – Prime Fluxo</title>
+  <meta name="description" content="Esta política descreve os tipos de cookies usados e as suas escolhas de consentimento (GDPR/ePrivacy).">
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+  <header class="container">
+    <a href="/" class="brand">Prime Fluxo</a>
+    <nav>
+      <a href="/operadores-licenciados.html">Operadores Licenciados</a>
+      <a href="/casino.html">Casino</a>
+      <a href="/jogo-responsavel.html">Jogo Responsável</a>
+      <a href="/contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Política de Cookies</h1>
+    <p>Usamos cookies estritamente necessários e, com o seu consentimento, cookies analíticos e de marketing. Pode <strong>aceitar</strong> ou <strong>rejeitar</strong> cookies não essenciais a qualquer momento (sem caixas pré-marcadas).  [oai_citation:14‡bacanaplay.pt](https://www.bacanaplay.pt/sobre-nos/?utm_source=chatgpt.com)</p>
+    <h2>Tipos</h2>
+    <ul>
+      <li><strong>Necessários:</strong> essenciais ao funcionamento do site.</li>
+      <li><strong>Analíticos:</strong> medir audiência (opt-in).</li>
+      <li><strong>Marketing:</strong> personalização de conteúdo/ads (opt-in).</li>
+    </ul>
+    <h2>Gestão</h2>
+    <p>As suas escolhas ficam guardadas no dispositivo. Pode alterá-las apagando os dados do navegador ou usando “Gerir Preferências”.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><a href="/termos.html">Termos</a> • <a href="/privacidade.html">Privacidade</a> • <a href="/contato.html">Contato</a></p>
+    </div>
+  </footer>
+
+  <script src="/scripts/consent.js" defer></script>
+</body>
+</html>
