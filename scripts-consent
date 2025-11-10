@@ -1,0 +1,31 @@
+(function(){
+  const CONSENT_KEY = 'consent_choice_v1';
+  const ageGate = document.getElementById('age-gate');
+  const cookieBanner = document.getElementById('cookie-banner');
+
+  const saved = localStorage.getItem(CONSENT_KEY);
+  if (!saved) cookieBanner.classList.remove('hidden');
+
+  const ageAccepted = localStorage.getItem('age_ok');
+  if (!ageAccepted) ageGate.classList.remove('hidden');
+
+  const ageAccept = document.getElementById('age-accept');
+  if (ageAccept) ageAccept.addEventListener('click', () => {
+    localStorage.setItem('age_ok','1');
+    ageGate.classList.add('hidden');
+  });
+
+  const accept = document.getElementById('cookie-accept');
+  const reject = document.getElementById('cookie-reject');
+
+  if (accept) accept.addEventListener('click', () => {
+    localStorage.setItem(CONSENT_KEY, JSON.stringify({analytics:true, marketing:true, ts:Date.now()}));
+    cookieBanner.classList.add('hidden');
+    // Carregue scripts opcionais AQUI (respeitando opt-in)
+  });
+
+  if (reject) reject.addEventListener('click', () => {
+    localStorage.setItem(CONSENT_KEY, JSON.stringify({analytics:false, marketing:false, ts:Date.now()}));
+    cookieBanner.classList.add('hidden');
+  });
+})();
